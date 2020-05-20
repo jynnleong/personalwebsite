@@ -23,9 +23,19 @@ nav{
     align-items: center;
     padding: 10px;
     font-size: 25px;
+
+    a{
+        color: black;
+    }
     
     i{
         margin: 0 10px;
+    }
+}
+
+.about-page{
+    h1{
+        border-bottom: 3px solid black;
     }
 }
 

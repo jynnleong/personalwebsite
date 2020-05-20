@@ -31,8 +31,16 @@ nav {
   font-size: 25px;
 }
 
+.about-links a {
+  color: black;
+}
+
 .about-links i {
   margin: 0 10px;
+}
+
+.about-page h1 {
+  border-bottom: 3px solid black;
 }
 
 .menu {
