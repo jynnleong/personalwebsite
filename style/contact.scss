@@ -60,7 +60,6 @@ nav{
 }
 
 .contact-content{
-    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,6 +89,7 @@ nav{
 }
 
 .submit-button{
+    margin-top: 10px;
     width: 100%;
     font-size: 20px;
     text-align: center;
