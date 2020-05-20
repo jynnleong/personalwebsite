@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <title>Projects</title>
+</head>
+<body>
+        <header>
+            <nav>
+                <div class="about-links">
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-linkedin"></i>
+                </div>
+                <ul class="menu">
+                    <a href="index.html" class="menu-links"><li>About</li></a>
+                    <a href="projects.html" class="menu-links"><li>Projects</li></a>
+                    <a href="#" class="menu-links"><li>Resume</li></a>
+                    <a href="contact.html" class="menu-links"><li>Contact</li></a>
+                </ul>
+            </nav>
+        </header>
+    
+        <main data-router-wrapper>
+            <section data-router-view="project" class="project">
+                <div class="project-content">
+                    <div class="project-page">
+                        <h1>Projects</h1>
+                    </div>
+                    <div class="project-showcase">
+                        <div class="project-banner">
+                            <img src="./Assets/Hangman.jpg" alt="">
+                            <div class="project-description">
+                                <h1 class="project-title">Hangman Java</h1>
+                                <p>Interactive hangman project featured a responsive hangman GUI.</p>
+                                <p>Technologies used: <i class="fab fa-java"></i></p>
+                                <a href="https://github.com/jynnleong/hangman" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-banner">
+                            <img src="./Assets/webscrape.jpg" alt="">
+                            <div class="project-description">
+                                <h1 class="project-title">Amazon Web Scrape</h1>
+                                <p>Gives users the choice to either download a CSV file containing the top 10 selling items in each category or visit the top 10 selling items webpage of the intended category</p>
+                                <p>Technologies used: <i class="fab fa-python"></i></p>
+                                <a href="https://github.com/jynnleong/amazonwebscrape" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-banner">
+                            <img src="./Assets/BlueprintSS.png" alt="">
+                            <div class="project-description">
+                                <h1 class="project-title">Blueprint Cafè</h1>
+                                <p>Clean and interactive sample café webpage.</p>
+                                <p>Technologies used: <i class="fab fa-html5"></i><i class="fab fa-css3"></i><i class="fab fa-js-square"></i></p>
+                                <div class="website-links">
+                                    <a href="https://github.com/jynnleong/blueprintcafe" target="_blank"><i class="fab fa-github"></i></a><a href="https://blueprintcafe.imfast.io/" target="_blank"><i class="fas fa-globe"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-banner">
+                            <img src="./Assets/MovinfoSS.png" alt="">
+                            <div class="project-description">
+                                <h1 class="project-title">Movinfo</h1>
+                                <p>Allows users to enter the movie title and the corresponding results will be displayed accordingly.</p>
+                                <p>Technologies used: <i class="fab fa-react"></i><i class="fab fa-html5"></i><i class="fab fa-css3"></i><i class="fab fa-js-square"></i></p>
+                                <a href="https://github.com/jynnleong/movieinfo" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.js" integrity="sha256-mfgvzVjyIcoXo0ElsT8uFIuDWYkvKCQ6wrkm6If7iug=" crossorigin="anonymous"></script>
+        <script src="./app/ProjectTransition.js"></script>
+    </body>
+</html>
