@@ -78,22 +78,21 @@ nav {
 }
 
 .project-page {
-  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 30px;
 }
 
 .project-page h1 {
   border-bottom: 3px solid black;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .project-showcase {
-  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,8 +113,8 @@ nav {
 }
 
 .project-banner img {
-  height: 120px;
-  width: 120px;
+  height: 110px;
+  width: 110px;
 }
 
 .project-banner p {
@@ -141,5 +140,85 @@ nav {
 .project-description a {
   font-size: 20px;
   color: black;
+}
+
+.github {
+  width: 10%;
+}
+
+.burger {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .menu {
+    position: absolute;
+    right: 0px;
+    top: 10vh;
+    height: 100vh;
+    background: #959595;
+    background: -webkit-gradient(linear, left top, right top, from(#959595), color-stop(48%, #cccccc), to(#959595));
+    background: linear-gradient(90deg, #959595 0%, #cccccc 48%, #959595 100%);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 4;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  }
+  .menu-links {
+    width: 100%;
+    text-align: center;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+.menu-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
 }
 /*# sourceMappingURL=projects.css.map */

@@ -7,9 +7,7 @@ const project_title = document.querySelectorAll(".project-title");
 
 const tl = gsap.timeline();
 
-tl.fromTo(social_links, 0.5, {x:"-100%", opacity:"0"}, {x:"0%", opacity:"1"})
-.fromTo(navigation, 0.6, {x:"-20%", opacity:"0"}, {x:"0%", opacity:"1"})
-.fromTo(project_header, 0.8, {x:"-100%", opacity:"0"}, {x:"0%", opacity:"1"});
+tl.fromTo(project_header, 0.8, {x:"-100%", opacity:"0"}, {x:"0%", opacity:"1"});
 
 for(var i = 0; i < project_banner.length; i++){
     tl.fromTo(project_banner[i], 0.5, {x:"-100%", opacity:"0"}, {x:"0%", opacity:"1"})
