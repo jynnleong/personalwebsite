@@ -166,18 +166,9 @@ nav{
 
 
 @media screen and (max-width:768px){
-   body.modal-open{
-        overflow: hidden;
-        position: fixed;
-    }
-
-    body.viewport-lg{
-        position: absolute;
-    }
-
-    body{
-        overflow-x:  hidden;
-        overflow-y: scroll !important;
+    html, body{
+        overflow-x: hidden;
+        position: relative;
     }
 
     .contact-details{
